@@ -9,8 +9,7 @@ const main = React.createClass({
     return (
         <Cell col={12}>
           <h1>Welcome!</h1>
-          This is an unsecured page that does not require a login.
-          You might use this as a welcome page, help, etc.
+
         </Cell>
     )
   }
