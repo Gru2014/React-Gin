@@ -44,7 +44,6 @@ export function requireAuthentication(Component, DefaultComponent) {
 // Define all the routes
 const routes = (
     <Route component={AppLayout}>
-      <Route name="welcome" path="/welcome" component={WelcomePage} />
       <Route name="secured" path="/secured" component={requireAuthentication(SecuredPage, WelcomePage)} />
       <Route name="user_details" path="/user_details" component={requireAuthentication(UserDetails, WelcomePage)} />
       <Route name="default" path="/" component={WelcomePage} />
